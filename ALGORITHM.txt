@@ -1,0 +1,39 @@
+ALOGIRTHM
+
+BEGIN
+	LOAD bookings.txt if exists
+	DISPLAY menu
+	GET input
+		IF AB
+			RUN addBooking method
+		IF BS
+			RUN bookSeat method
+		IF CB
+			RUN checkInBag method
+		IF PB
+			RUN pickUp method
+		IF DB
+			RUN displayBooking method
+		IF DA
+			RUN displayAllBooking method
+		IF HB
+			RUN displayHistorical method
+		IF SD
+			RUN seedData method
+		IF EX
+			RUN writeData method
+		IF none of the above	
+			GET a new input
+	DISPLAY output
+END
+
+
+TEST
+	INPUT is equal to AB, addBooking method should be performed
+	INPUT is equal to BS, bookSeat method should be performed
+	INPUT is equal to CB, checkInBag method should be performed
+
+
+NOTE:   IF THE WEIGHT CRASHES WHEN "." IS USED, TRY ",".
+	DON'T KNOW WHY, BUT EVERYTIME I USED "." IT CRASHES 
+	BUT IT WORKS USING ",". THANK YOU
